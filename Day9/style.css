@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-width: 100vh;
+    display: grid;
+    grid-template-rows: 6.25rem auto;
+    grid-template-columns: 13rem 1fr;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: purple;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+header input{
+    width: 300px;
+    height: 34px;
+    border-radius: 10px;
+    border: blueviolet;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+header button{
+    width: 150px;
+    height: 34px;
+    border-radius: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    border: 1px solid white;
+    margin-left: -8px;
+}
+
+aside{
+    background: rgb(0, 200, 93);
+}
+
+main{
+    background: wheat;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,20rem);
+    grid-auto-rows: auto;
+    gap: 2rem;
+    padding: 2rem;
+
+}
+.card{
+    /* height: 200px; */
+    background-color: blueviolet;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 3px solid rgb(130, 22, 232);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
+}
