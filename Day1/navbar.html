@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-4</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .nav{
+        background-color: rgb(6, 6, 69);
+        display: flex;
+        height:80px;
+        padding: 20px;
+    }
+    .opts{
+        text-align: center;
+        align-content: center;
+        background-color: rgb(219, 255, 255);
+        margin-left: 20px;
+        height: 30px;
+        width: 60px;
+        border-radius: 0 10px 0 10px;   
+        transition: .5s;     
+    }
+    .opts:hover{
+        animation-duration: 2s;
+        border-style: solid;
+        border-color: rgb(108, 110, 211);
+        border-radius: 10px 0 10px 0;
+    }
+    .search{
+        margin-left:30px;
+        padding-left: 20px;
+        width: 500px;
+        height: 34px;
+        border-radius: 12px;
+    }
+    .btn{
+        margin-left: 30px;
+        height: 40px;
+        width: 40px;
+        background-color: green;
+        border-radius: 50%;
+        border-style: solid;
+        border-color: goldenrod;
+        border-width: 3px;
+        transition: 0.2s;
+    }    
+    .btn:hover{
+        border-style: dashed;
+        border-width: 6px;
+    }
+</style>
+<body>
+    <div class="nav">
+        <div class="opts">Home</div>
+        <div class="opts">About</div>
+        <div class="opts">Help</div>
+        <input type="text" class="search" placeholder="✨ Search here ... 🔍">
+        <div class="btn"></div>
+    </div>
+</body>
+</html>
